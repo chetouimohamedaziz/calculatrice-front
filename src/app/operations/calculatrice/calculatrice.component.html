@@ -1,0 +1,54 @@
+<div class="main-content">
+    <mat-card class="card-size card-box-shadow">
+        <mat-card-header>
+            <mat-card-title>
+                Calculatrice
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <section class="screen-size">
+                <div class="screen-style">
+                    {{ operations }}
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button color="accent" class="triple-button"
+                        (click)="resetOperations()">C</button>
+                    <button mat-raised-button (click)="selectedOperator('/')">/</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button (click)="selectedNumber('7')">7</button>
+                    <button mat-raised-button (click)="selectedNumber('8')">8</button>
+                    <button mat-raised-button (click)="selectedNumber('9')">9</button>
+                    <button mat-raised-button (click)="selectedOperator('*')">*</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button (click)="selectedNumber('4')">4</button>
+                    <button mat-raised-button (click)="selectedNumber('5')">5</button>
+                    <button mat-raised-button (click)="selectedNumber('6')">6</button>
+                    <button mat-raised-button (click)="selectedOperator('-')">-</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button (click)="selectedNumber('1')">1</button>
+                    <button mat-raised-button (click)="selectedNumber('2')">2</button>
+                    <button mat-raised-button (click)="selectedNumber('3')">3</button>
+                    <button mat-raised-button (click)="selectedOperator('+')">+</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button class="double-button" (click)="selectedNumber('0')">0</button>
+                    <button mat-raised-button (click)="selectedNumber('.')">.</button>
+                    <button mat-raised-button color="primary" (click)="calculate()">=</button>
+                </div>
+            </section>
+        </mat-card-content>
+    </mat-card>
+</div>
