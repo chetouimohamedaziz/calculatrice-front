@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ToolboxModule } from '../shared/toolbox.module';
 import { CalculatriceComponent } from './calculatrice/calculatrice.component';
 import { OperationsRoutingModule } from './operations-routing.module';
 import { OperationsService } from './operations.service';
@@ -12,7 +13,8 @@ import { OperationsService } from './operations.service';
   ],
   imports: [
     CommonModule,
-    OperationsRoutingModule
+    OperationsRoutingModule,
+    ToolboxModule
   ],
   providers: [
     OperationsService
