@@ -1,0 +1,55 @@
+.main-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-box-shadow {
+    box-shadow: none !important;
+}
+
+.card-size {
+    max-width: 50%;
+}
+
+.mat-card-header {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    .mat-card-title {
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.button-row {
+    display: table-cell;
+}
+
+.mat-button-base {
+    margin: 3px;
+    min-width: 70px;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+.double-button {
+    width: calc(73px * 2);
+}
+
+.triple-button {
+    width: calc(74px * 3);
+}
+
+.screen-style {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 7px;
+    line-height: 35px;
+    word-break: break-word;
+}
+
+.screen-size {
+    max-width: fit-content;
+}

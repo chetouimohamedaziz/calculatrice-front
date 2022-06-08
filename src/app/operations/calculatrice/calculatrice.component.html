@@ -1,1 +1,53 @@
-<p>calculatrice works!</p>
+<div class="main-content">
+    <mat-card class="card-size card-box-shadow">
+        <mat-card-header>
+            <mat-card-title>
+                Calculatrice
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <section class="screen-size">
+                <div class="screen-style">
+                    {{ operations }}
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button color="accent" class="triple-button">C</button>
+                    <button mat-raised-button>/</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button>7</button>
+                    <button mat-raised-button>8</button>
+                    <button mat-raised-button>9</button>
+                    <button mat-raised-button>*</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button>4</button>
+                    <button mat-raised-button>5</button>
+                    <button mat-raised-button>6</button>
+                    <button mat-raised-button>-</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button>1</button>
+                    <button mat-raised-button>2</button>
+                    <button mat-raised-button>3</button>
+                    <button mat-raised-button>+</button>
+                </div>
+            </section>
+            <section>
+                <div class="button-row">
+                    <button mat-raised-button class="double-button">0</button>
+                    <button mat-raised-button>.</button>
+                    <button mat-raised-button color="primary">=</button>
+                </div>
+            </section>
+        </mat-card-content>
+    </mat-card>
+</div>
