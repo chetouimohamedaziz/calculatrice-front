@@ -13,39 +13,40 @@
             </section>
             <section>
                 <div class="button-row">
-                    <button mat-raised-button color="accent" class="triple-button">C</button>
-                    <button mat-raised-button>/</button>
+                    <button mat-raised-button color="accent" class="triple-button"
+                        (click)="resetOperations()">C</button>
+                    <button mat-raised-button (click)="selectedOperator('/')">/</button>
                 </div>
             </section>
             <section>
                 <div class="button-row">
-                    <button mat-raised-button>7</button>
-                    <button mat-raised-button>8</button>
-                    <button mat-raised-button>9</button>
-                    <button mat-raised-button>*</button>
+                    <button mat-raised-button (click)="selectedNumber('7')">7</button>
+                    <button mat-raised-button (click)="selectedNumber('8')">8</button>
+                    <button mat-raised-button (click)="selectedNumber('9')">9</button>
+                    <button mat-raised-button (click)="selectedOperator('*')">*</button>
                 </div>
             </section>
             <section>
                 <div class="button-row">
-                    <button mat-raised-button>4</button>
-                    <button mat-raised-button>5</button>
-                    <button mat-raised-button>6</button>
-                    <button mat-raised-button>-</button>
+                    <button mat-raised-button (click)="selectedNumber('4')">4</button>
+                    <button mat-raised-button (click)="selectedNumber('5')">5</button>
+                    <button mat-raised-button (click)="selectedNumber('6')">6</button>
+                    <button mat-raised-button (click)="selectedOperator('-')">-</button>
                 </div>
             </section>
             <section>
                 <div class="button-row">
-                    <button mat-raised-button>1</button>
-                    <button mat-raised-button>2</button>
-                    <button mat-raised-button>3</button>
-                    <button mat-raised-button>+</button>
+                    <button mat-raised-button (click)="selectedNumber('1')">1</button>
+                    <button mat-raised-button (click)="selectedNumber('2')">2</button>
+                    <button mat-raised-button (click)="selectedNumber('3')">3</button>
+                    <button mat-raised-button (click)="selectedOperator('+')">+</button>
                 </div>
             </section>
             <section>
                 <div class="button-row">
-                    <button mat-raised-button class="double-button">0</button>
-                    <button mat-raised-button>.</button>
-                    <button mat-raised-button color="primary">=</button>
+                    <button mat-raised-button class="double-button" (click)="selectedNumber('0')">0</button>
+                    <button mat-raised-button (click)="selectedNumber('.')">.</button>
+                    <button mat-raised-button color="primary" (click)="calculate()">=</button>
                 </div>
             </section>
         </mat-card-content>
